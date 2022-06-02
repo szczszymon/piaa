@@ -1,0 +1,14 @@
+INSERT(y, k):
+   if y == NULL:
+      return node[key]
+      
+   else if key[y] > k
+      left[y] = INSERT(left[y], k)
+      
+   else if key[y] < k
+      right[y] = INSERT(right[y], k)
+      
+   else
+      "Wartość klucza jest powtórzona!"
+      
+   return REBALANCE(y)

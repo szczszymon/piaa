@@ -1,0 +1,8 @@
+znajdowanie maximum:
+   	Złożoność - O(n)
+   	
+   	Maximum(x)
+   	   while right[x] <> nil
+   	      do x = right[x]
+   	      
+   	   return x

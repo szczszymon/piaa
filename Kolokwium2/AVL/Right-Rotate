@@ -1,0 +1,23 @@
+Wysokosc(x):
+   if x == NULL:
+      return -1
+   
+   return wysokosc[x]
+   
+   
+Oblicz_wysokosc(x):
+   wysokosc[x] = 1 + max(Wysokosc(left[x]), Wysokosc(right[x]))	
+
+   
+   
+RIGHT-ROTATE(y):
+   x = left[y]
+   z = right[x]
+   
+   right[x] = y
+   left[y] = z
+   
+   Oblicz_wysokosc(y)
+   Oblicz_wysokosc(x)
+   
+   return x

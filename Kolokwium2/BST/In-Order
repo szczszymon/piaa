@@ -1,0 +1,8 @@
+IN-ORDER(x):
+ 
+	   if x:
+		IN-ORDER(left[x])
+	 
+		print key[x]
+	 
+		IN-ORDER(right[x])

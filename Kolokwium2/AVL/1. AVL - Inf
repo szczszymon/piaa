@@ -1,0 +1,25 @@
+AVL - samobalansujace sie drzewo BST (REBALANCE na BST tworzy AVL)
+
+AVL ma 7 charakterystycznych operacji:
+
+	2 podstawowe:
+		Left-Rotate LR
+		Right-Rotate RR
+	
+	5 bazujacych na tych podstawowych:
+		Left-Left-Rotate LLR
+		Left-Right-Rotate LRR
+		Right-Right-Rotate RRR
+		Right-Left-Rotate RLR
+		Rebalance
+
+Max wysokosc drzewa AVL o k wezlach: log(k)
+
+Zeby przywrocic wlasnosci drzewa AVL po wstawieniu elementu idziemy od punktu wstawienia do gory w strone korzenia
+
+Ogolny opis:
+	Drzewo jest zbalansowane
+	Kazde podrzewo powinno byc zbalansowane
+	
+	Czyli mniej wiecej po rowno wartosci z lewej i prawej strony drzewa
+	Kazde poddrzewo musi miec elementy w kolejnosci ale mniej wiecej po tyle samo elementow (moze sie roznic o +/- 2)

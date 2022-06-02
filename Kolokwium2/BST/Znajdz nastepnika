@@ -1,0 +1,11 @@
+TREE-SUCCESSOR(x)
+   if x.right <> nil
+      then return Minimum(right[x])*
+   
+   y = x.parent
+   while y <> nil && x == right[y]
+      then
+        x = y
+        y = parent[y]
+
+   return y

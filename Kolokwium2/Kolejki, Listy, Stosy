@@ -1,0 +1,21 @@
+Stos - typ LIFO (Last In First Out) - Dodajemy nowe wartosci na sam koniec, kasujemy je takze od konca (kasowanie to pop)
+
+Kolejka - typ FIFO (First In First Out) - Dodajemy nowe wartosci na koniec, kasujemy je z poczatku
+
+
+Roznica miedzy kolejka a stosem: Kolejka wykorzystuje 2 konce danych, a stos jeden
+
+
+Stos moze byc wykorzystany do sprawdzenia zrownowazenia nawiasow itd
+
+
+Lista dwukierunkowa zwracajaca 1 element z listy dziala w czasie stalym O(1)
+
+Lista - Insert wstawiajacy element v na pozycje i dziala w czasie liniowym O(n)
+
+Lista jednokierunkowa operacja GET-last zwracajaca ostatni element dziala w czasie linowym O(n)
+
+Lista jednokierunkowa operacja GET-first zwracajaca pierwszy element dziala w czasie stalym O(1)
+
+Lista - Search zwwracajacy element v lub info o jego braku dziala w czasie liniowym O(n)
+

@@ -1,0 +1,28 @@
+BST - drzewo w ktorym wartosci mniejsze od korzenia sa na lewo a wieksze na prawo
+
+Najmniejszy element w drzewie jest w lewym dolnym rogu
+
+Najwiekszy element w drzewie jest w prawym dolnym rogu
+
+Przechodzenie przez drzewa:
+	
+	Pre-order:
+		Root-Left-Right
+
+	In-Order: (domyslny w algorytmach)
+		Left-Root-Right
+
+	Post-order:
+		Left-Right-Root
+
+Pesymistyczna srednia zlozonosc obiczeniowa operacji na BST: O(n), O(log n)
+
+TREE-Insert na BST w najlepszym przypadku posiada zlozonosc O(1)
+
+Wstawienie n elementow do BST: pesymistycznie - O(n^2), optymistycznie - O(n)
+
+Wysokosc drzewa BST o n wierzcholkach jest w przedziale: log n - n
+
+Kasowanie elementow w BST NIE JEST przemienne - otrzymujemy inny wynik po skasowaniu x potem y i inny wynik vice versa
+
+Sortowanie z uzyciem zrownowazonych BST ma zlozonosc: O(n log n)

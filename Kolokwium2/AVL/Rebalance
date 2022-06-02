@@ -1,0 +1,28 @@
+Oblicz_balans(x):
+   if x == NULL:
+      return 0
+   
+   return Wysokosc(right[x]) - Wysokosc(left[x])
+   
+
+REBALANCE(y):
+   Oblicz_wysokosc(y)
+   balans = Oblicz_balans(y)
+   
+   if balans > 1:
+      if Wysokosc(right[right[y]]) > Wysokosc(left[right[y]]):
+         y = LEFT-ROTATE(Y)
+         
+      else:
+         right[y] = RIGHT-ROTATE(right[y])
+         y = LEFT-ROTATE(y)
+  
+   else if balans < -1:
+      if Wysokosc(left[left[y]]) > Wysokosc(right[left[y]]):
+         y = RIGHT-ROTATE(y)
+         
+      else:
+         left[y] = LEFT-ROTATE(left[y])
+         y = RIGHT-ROTATE(y)
+         
+   return y

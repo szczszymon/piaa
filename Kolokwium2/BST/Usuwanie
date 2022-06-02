@@ -1,0 +1,39 @@
+Zamien(T, a, b)
+      if parent[a] == nil
+        then root[T] = b
+        
+      else if a == left[parent[a]]
+        then left[parent[a]] = b
+        
+      else
+        right[parent[a]] = b
+
+      if b <> nil
+        then parent[b] = parent[a]
+
+
+TREE-DELETE(T, z)
+       if left[z] == nil
+         then Zamien(T, z, right[z])
+          
+       else if right[z] == nil
+         then Zamien(T, z, left[z])
+          
+       else
+         y = TREE-SUCCESSOR(z)
+         
+         if parent[y] <> z
+            then
+              Zamien(T, y, right[y])
+              right[y] = right[z]
+              parent[right[y]] = y
+         
+         Zamien(T, z, y)
+         left[y] = left[z]
+         parent[left[y]] = y
+         
+         
+TREE-SUCCESSOR() - funkcja znajdująca następnika
+Zamien() - pomocnicza funkcja zamieniająca węzeł a z b
+
+       

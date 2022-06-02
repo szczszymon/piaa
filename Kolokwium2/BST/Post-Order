@@ -1,0 +1,8 @@
+POST-ORDER(x):
+ 
+	   if x:
+		POST-ORDER(left[x])
+	 
+		POST-ORDER(right[x])
+	 
+		print key[x]

@@ -1,0 +1,20 @@
+TREE-INSERT(T,z)
+y = nil
+x = root[T]
+while x <> nil do
+	y = x
+	
+	if v < key[x]
+		then x = left[x]
+	
+	else x = right[x]
+
+parent[z] = y
+
+if y = nil
+	then root[T] = z
+	
+else if v < key[y]
+	then left[y] = z
+	
+else right[y] = z

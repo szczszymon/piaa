@@ -1,0 +1,14 @@
+wyszukiwanie wartości x:
+   	Złożoność - O(n)
+   	
+   	Search(root, x)
+   	   if root == nil || x == key[root]
+   	      then return root
+   	      
+   	   if left[root] == nil && right[root] == nil
+   	      then return nil
+   	      
+   	   if x < key[root]
+   	      then return Search(left[root], x)
+   	      
+   	   else return Search(right[root], x)

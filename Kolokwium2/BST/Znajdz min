@@ -1,0 +1,8 @@
+znajdowanie minimum:
+   	Złożoność - O(n)
+   	
+   	Minimum(x)
+   	   while left[x] <> nil
+   	      do x = left[x]
+   	      
+   	   return x

@@ -1,0 +1,15 @@
+HASH-DELETE(T,k):
+   i = HASH-SEARCH(T, k)
+   if T[i] is free || T[i] == NIL
+      return NIL
+   j = i
+   repeat
+      j = (j + 1) % m
+      if T[j] is free
+		break
+	  a = h(T[j]) % m
+	  if (j > i && (a <= i || a > j)) || (j < i && (a <= i && a > j))
+		T[i] = T[j]
+		i = j
+   until True
+   mark T[i] as free

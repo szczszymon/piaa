@@ -3,7 +3,7 @@ def selection_sort(arr):
     for i in range(n):
         min_id = i
         for j in range(i + 1, n):
-            if arr[min_id] > arr[j]:
+            if arr[min_id] < arr[j]:
                 min_id = j
 
         arr[i], arr[min_id] = arr[min_id], arr[i]

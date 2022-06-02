@@ -1,0 +1,22 @@
+x - korzeń drzewa BST
+
+x posiada 2 dzieci:
+   lewe - y (y posiada 2 podrzewa L1 oraz R1)
+   prawe - z (z posiada 2 poddrzewa L2 oraz R2)
+
+Następnik:
+   Następnikiem x jest najmniejszy element - m w poddrzewie L2.
+   
+   1) L2 jest puste - nie trzeba niczego wykazywać
+   2) m posiada lewe dziecko, które musi być mniejsze od m
+        sprzeczność z założeniem, że m to najmniejszy element w L2
+        c.k.d.
+        
+Poprzednik:
+   Poprzednikiem x jest największy element - M w poddrzewie R1
+   
+   1) R1 jest puste - nie trzeba niczego wykazywać
+   2) M posiada prawe dziecko, które musi być większe od M
+        sprzeczność z założeniem, że M to największy element w R1
+        c.k.d.
+

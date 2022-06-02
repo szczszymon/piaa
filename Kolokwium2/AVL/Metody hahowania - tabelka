@@ -1,0 +1,15 @@
+Najpierw zrob tabelke z wierszami od 0 do m-1, np 0-10 dla 11
+
+Liniowe:
+   Oblicz hash za pomoca funkjci h1 i wstaw wartosc w wiersz o indeksie rownym wynikowi
+   Jezeli to pole jest zajete wstaw wartosc w najblizsze wolne pole ponizej wiersza docelowego
+
+
+Lancuchowe:
+   Oblicz hash z funkcji h1 i wstaw wartosc w wiersz o indeksie rownym wynikowi
+   Jezeli pole jest zajete dorysuj na koncu strzalke i wstaw wartosc
+
+
+Dwukrotne:
+   Oblicz hash z funkcji h1 i wastaw w wiersz o indeksie rownym wynikowi
+   Jezeli pole jest zajete oblicz nowy hash za pomoca funkcji laczacej h1 i h2 i wstaw wartosc w wiersz o indeksie rownym nowemu wynikowi

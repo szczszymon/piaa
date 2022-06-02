@@ -1,0 +1,12 @@
+x jest węzłem, który chcemy usunąć.
+
+Po znalezieniu węzła x (wyszukujemy go analogicznie jak w przypadku drzewa BST) musimy "odbudować" ciągłość drzewa.
+
+Jeżeli x był liściem, nie musimy podejmować żadnych działąń, ponieważ nie miał on dzieci.
+
+Jeżeli x posiadał jedno dziecko, to zostanie ono wykorzystane do zastąpienia pozycji x w drzewie.
+
+W przypadku gdy x posiada dwoje dzieci ustawiamy wartość x na wartość węzła znajdującego się 
+najbardziej z lewej strony prawego dziecka x, a następnie ussuwamy ten węzeł.
+
+Po wypełnieniu luki powstałej przez usunięcie x wywołujemy funkcję REBALANCE(), aby utrzymać strukturę drzewa AVL
